@@ -24,7 +24,7 @@ def predict():
         to_predict_list = request.form.to_dict()
         to_predict_list = list(to_predict_list.values())
         to_predict_list = list(map(float, to_predict_list))
-         #diabetes
+         #health
         if(len(to_predict_list)==7):
             result = ValuePredictor(to_predict_list,7)
     
